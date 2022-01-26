@@ -1,44 +1,31 @@
-from importlib.metadata import version
+#from importlib.metadata import version
+#print('flask:', version('flask'))
+#print('gunicorn:', version('gunicorn'))
+#print('dash:', version('dash'))
+#print('dash_bootstrap_components:', version('dash_bootstrap_components'))
+#print('pandas:', version('pandas'))
+#print('plotly:', version('plotly'))
+#print('statsmodels:', version('statsmodels'))
+#print('scipy:', version('scipy'))
+#print('numpy:', version('numpy'))
 
-print('flask:', version('flask'))
-print('gunicorn:', version('gunicorn'))
 import dash
-print('dash:', version('dash'))
-
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output, State
 from dash import dash_table
 from dash.exceptions import PreventUpdate
-
 import dash_bootstrap_components as dbc
-print('dash_bootstrap_components:', version('dash_bootstrap_components'))
-
 import pandas as pd
-print('pandas:', version('pandas'))
-
 import plotly.graph_objects as go
-print('plotly:', version('plotly'))
-
 import warnings
 import sys
 import os
 import re
 import numpy as np
-print('numpy:', version('numpy'))
-
 from scipy import stats
-print('scipy:', version('scipy'))
-
 import random
 import statsmodels.api as sm
-print('statsmodels:', version('statsmodels'))
-
-sys.exit()
-
-#import numpy.polynomial.polynomial as poly
-#from statsmodels.regression.linear_model import OLS
-#from statsmodels.tools import add_constant
 
 FONT_AWESOME = "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
 
