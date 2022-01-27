@@ -527,7 +527,9 @@ def update_results_figure(x1, x2, y1, y2, operator1, operator2, outliers):
             line=dict(color=clrs[i], width=2),
         ))
         
-            
+    if len(y1) > 1:
+        ylab = None
+        
     figure = go.Figure(
         data=fig_data,
         layout=go.Layout(
@@ -544,6 +546,7 @@ def update_results_figure(x1, x2, y1, y2, operator1, operator2, outliers):
                 zeroline=True,
                 showticklabels=True,
             ),
+            
             
             yaxis=dict(
                 title=dict(
